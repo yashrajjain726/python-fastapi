@@ -4,3 +4,4 @@ sqlalchemy
 passlib
 pyJWT
 bcrypt
+python-jose

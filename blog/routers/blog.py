@@ -1,10 +1,9 @@
 from fastapi import APIRouter
 
-from blog import database, models, schemas
+from blog import database, schemas
 from blog.repository import blog
-from ..schemas import Blog
 from typing import List
-from fastapi import Depends , status, Response, HTTPException
+from fastapi import Depends , status
 from sqlalchemy.orm import Session
 
 router = APIRouter(tags=["Blogs"],prefix="/blog")
