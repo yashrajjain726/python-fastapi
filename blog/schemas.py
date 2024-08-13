@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from pydantic import BaseModel
 
 
@@ -23,6 +23,6 @@ class ShowUser(BaseModel):
 class ShowBlog(BaseModel):
     title: str
     body: str
-    owner: ShowUser
+    owner: Optional[ShowUser]
     class Config:
         orm_mode = True
